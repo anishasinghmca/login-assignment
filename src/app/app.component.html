@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<div class="login-holder">
+  <form class="login" (ngSubmit)="login()">
+    <h1 class="login-title">Login Form</h1>
+    <input type="text" class="login-input" placeholder="Username" autofocus [(ngModel)]="username" name="username">
+    <input type="password" class="login-input" placeholder="Password" [(ngModel)]="password" name="password">
+    <input type="submit" value="Login" class="login-button" >
+    <span class ="error" *ngIf="error"> Please enter username and password.</span>
+  </form>
+</div>
+<div class="profile-holder">
+
+</div>
